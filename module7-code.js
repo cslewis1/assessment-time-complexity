@@ -55,8 +55,8 @@ const isPangram = (str) => {
 Write a function, find_longest_word, that takes a list of words and returns 
 the length of the longest one. */
 
-const findLonestWord = (arr) => arr.reduce((a,b) => a.length < b.length ? b : a)
+const findLonestWord = (arr) => arr.reduce((a,b) => a.length < b.length ? b : a).length
 
-// console.log(findLonestWord(["hi", "hello", "heeelllooo"]))
+ console.log(findLonestWord(["hi", "hello", "heeelllooo"]))
 //Linear time: O(n)
 
